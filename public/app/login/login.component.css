@@ -1,0 +1,138 @@
+.btn {
+    padding: 16px 14px 18px;
+}
+.btn-facebook{
+    color: #fff;
+    background-color: #3b5998
+}
+.btn-block{
+    display: block;
+    width: 30%;
+    margin:auto;
+}
+.btn{
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    
+    
+    
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.btn-facebook {
+    padding-top: 14px;
+}
+.btn-facebook:hover{
+    background-color: cornsilk;
+}
+body {
+    font-family: circular-spotify-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.btn  {
+    
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+   
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+}
+img{
+    vertical-align: middle;
+    border:0;
+    
+}
+.bg-dark{
+    background-color: #000;
+}
+.sm-padding{
+    padding: 60px 0px;
+    margin-top: 10px;
+}
+@media (min-width: 992px){
+.container{
+    width: 970px;
+
+}
+}
+.container{
+    padding: 15px 0px;
+    margin-right:auto;
+    margin-left:auto;
+}
+*{
+    box-sizing: border-box;
+}
+.section-header{
+    position: relative;
+    margin-bottom: 60px;
+    
+}
+.text-center{
+    text-align: center;
+}
+
+.footer-follow {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-follow li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom:13px;
+}
+.footer-follow li a{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+@media (min-width: 350px){
+ .btn-facebook {
+    padding-top: 14px;
+}
+}
+@media (min-width: 350px){
+.btn{
+    font-size: 9px;
+    line-height: 1;
+    border-radius: 500px;
+}
+}
+div{
+    display: block;
+}
+.col-xs-12 {
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+.divider {
+    border-top: 1px solid #d9dadc;
+    display: block;
+    line-height: 1px;
+    margin: 15px 0;
+    position: relative;
+    text-align: center;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+

@@ -1,4 +1,3 @@
-import { AuthService } from './backend.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,11 +8,11 @@ import { LoginComponent } from './login/login.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 //firebasesettings
 import { environment } from 'src/environments/environment';
+import{AngularFireDatabaseModule} from '@angular/fire/database';
 import{AngularFirestoreModule} from '@angular/fire/firestore';
+import{AngularFireStorageModule} from '@angular/fire/storage';
 import{AngularFireModule} from '@angular/fire';
 import{AngularFireAuthModule} from '@angular/fire/auth';
-import { ServiceWorkerModule } from '@angular/service-worker';
-
 
 
 @NgModule({
@@ -28,9 +27,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase,'portal'),
     AngularFireAuthModule,
-    ,
+    AngularFireDatabaseModule,
     AngularFirestoreModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     
 
   ],

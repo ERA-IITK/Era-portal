@@ -1,8 +1,5 @@
-import { AuthService } from './../backend.service';
-import { Router } from '@angular/router';
-
+import { BackendService } from './../backend.service';
 import { Component, OnInit } from '@angular/core';
-
 
  
 @Component({
@@ -11,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  userloggedin:boolean=true;
+  error: boolean=false;
+  errorMessage:String="";
   
 
-  constructor(public AuthService: AuthService,
-              ) { }
-
-              
+  constructor(private_backendservice: BackendService) { }
 
   ngOnInit() : void {
   }
     
     
   
-} 
+  }
