@@ -1,3 +1,4 @@
+import { AuthService } from './backend.service';
 import { AngularFireDatabase } from '@angular/fire/database/database';
 import { User } from './shared/services/user';
 
@@ -48,7 +49,7 @@ export class AuthService {
 
   // Auth logic to run auth providers
      AuthLogin(provider) {
-    return this.afAuth.authState.signInWithPopup(provider)
+    return this.afAuth.AuthService.signInWithPopup(provider)
     .then((result) => {
        this.ngZone.run(() => {
           this.router.navigate(['landing']);
