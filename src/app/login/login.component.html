@@ -7,6 +7,7 @@
         <link rel="stylesheet"  href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://accounts.scdn.co/css/index.48778854b2fbc42ce2ee.css" media="screen" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
         
     </head>
     <body>
@@ -26,7 +27,7 @@
                      Login through Facebook   
                 </button>
                 <br>
-                <button  id="google" class="btn btn-block btn-google" (click)="authService.GoogleAuth()" style="font-size:14px;background-color:#000;color:#fff">Login With Google</button>
+                <button (click)="auth.googleSignin()"><i class="btn btn-block btn-google" style="font-size:14px;background-color:#000;color:#fff">Login With Google</i></button>
 
             </div>
             <div class="col-xs-12 row ">
