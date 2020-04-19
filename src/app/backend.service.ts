@@ -2,10 +2,10 @@ import { User } from './shared/services/user';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
-
- import { auth } from 'firebase/app';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { auth } from 'firebase/app';
+
 
 import { Observable, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
@@ -41,7 +41,7 @@ export class AuthService {
     }
     async googleSignin() {
       const provider = new auth.GoogleAuthProvider();
-      const credential = await this.afAuth.auth.signInWithPopup(provider);
+      const credential = await this.afAuth.signInWithPopup(provider);
       return this.updateUserData(credential.user);
     }
   
@@ -53,7 +53,8 @@ export class AuthService {
         uid: user.uid, 
         email: user.email, 
         displayName: user.displayName, 
-        photoURL: user.photoURL
+        photoURL: user.photoURL,
+        emailVerified: false
       } 
   
       return userRef.set(data, { merge: true })
@@ -61,7 +62,7 @@ export class AuthService {
     }
   
     async signOut() {
-      await this.afAuth.auth.signOut();
+      await this.afAuth.signOut();
       this.router.navigate(['/']);
     }
      }

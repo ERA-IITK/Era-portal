@@ -41,7 +41,6 @@ measurementId: "G-2Z03HD317P"
     AppRoutingModule,
     AngularFireModule.initializeApp(config),
     AngularFireAuthModule,
-    ,
     AngularFirestoreModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     

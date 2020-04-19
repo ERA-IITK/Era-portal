@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "recruitment-portal-732b0"
+  },
+  "targets": {
+    "encrypt-getplaced": {
+      "hosting": {
+        "landing": [
+          "encrypt-getplaced"
+        ]
+      }
+    }
   }
 }
